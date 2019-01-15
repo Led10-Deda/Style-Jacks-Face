@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <form id="f1">
+            <p>
+                <b>Skin Color:</b>
+                <input id="skincolor" type="color" />
+            </p>
+            <p>
+                <b>Hair Color:</b>
+                <input id="haircolor" type="color" value="hsl(60%, 40%, 60%)"/>
+            </p>
+        </form>
+        <form id="f2">
+            <p>
+                <b>Eye Color:</b>
+                <input id="eyecolor" type="color" />
+            </p>
+            <p>
+                <b>Eyebrow Color:</b>
+                <input id="eyebrowcolor" type="color" />
+            </p>
+        </form>
+        <svg>
+        <!-- Face frame -->
+            <path id="face" d="
+            M132.5 60, 
+            C132 120 145 125 160 140,
+            Q170 150 180 140,
+            C195 125 208 120 207.5 60
+            " fill="#FDC" stroke="black"></path>
+            
+            <!-- Hair -->
+            <path id="hair" d="
+            M 207.5 60,
+            207.5 70 190 60 180 70 170 60 160 70 150 60 132.5 70 132.5 60,
+            Q170 30 207.5 60" fill="#000" stroke="black"></path>
+            
+            <!-- Eyes -->
+            <path id="leyeu" class="eye" d="
+            M142.5 90,
+            Q152.5 82.5 162.5 90
+            " fill="white" stroke="black"></path>
+            <path id="leyed" class="eye" d="
+            M142.5 90,
+            Q152.5 97.5 162.5 90
+            " fill="white" stroke="black"></path>
+            <path id="reyeu" class="eye" d="
+            M177.5 90,
+            Q187.5 82.5 197.5 90
+            " fill="white" stroke="black"></path>
+            <path id="reyed" class="eye" d="
+            M177.5 90,
+            Q187.5 97.5 197.5 90
+            " fill="white" stroke="black"></path>
+            <!-- Cornea and iris -->
+            <circle id="liris" class="eye" cx="152.5" cy="90" r="3.25" fill="#000"></circle>
+            <circle id="riris" class="eye" cx="187.5" cy="90" r="3.25" fill="#000"></circle>
+            <circle id="lcornea" class="eye" cx="152.5" cy="90" r="2" fill="black"></circle>
+            <circle id="rcornea" class="eye" cx="187.5" cy="90" r="2" fill="black"></circle>
+            <!-- Extra eyes -->
+            <path class="eeyes" d="M142.5 90, L 162.5 90" stroke="black"></path>
+            <path class="eeyes" d="M177.5 90, L 197.5 90" stroke="black"></path>
+            <path class="eeyes" d="M0 0 Z"></path>
+            <path class="eeyes" d="M0 0 Z"></path>
+            <path class="eeyes" d="M0 0 Z"></path>
+            <path class="eeyes" d="M0 0 Z"></path>
+            <path class="eeyes" d="M0 0 Z"></path>
+            <path class="eeyes" d="M0 0 Z"></path>
+            
+            <!-- Eyebrows -->
+            <path id="leyebrow" class="eyebrows" d="
+            M142 82.5,
+            Q152 77.5 162 82.5,
+            Z
+            " fill="#000" stroke="black"></path>
+            <path id="reyebrow" class="eyebrows" d="
+            M177 82.5,
+            Q187 77.5 197 82.5,
+            Z
+            " fill="#000" stroke="black"></path>
+            <!-- Extra eyebrows -->
+            <path id="eleyebrow" class="eeyebrows" d="
+            M142 79.5,
+            Q152 74.5 162 79.5,
+            Z
+            " fill="#000" stroke="black"></path>
+            <path id="ereyebrow" class="eeyebrows" d="
+            M177 79.5,
+            Q187 74.5 197 79.5,
+            Z
+            " fill="#000" stroke="black"></path>
+            
+            <!-- Nose -->
+            <path id="nose" d="
+            M170 97.5,
+            C165 112.5 163.5 115 170 113.5
+            " fill="#FDC" stroke="black"></path>
+            
+            <!-- Mouth -->
+            <path id="mouth" class="emouth" d="
+            M160 125,
+            Q170 140 180 125,
+            Z
+            " fill="white" stroke="black"></path>
+            <!-- Extra mouth -->
+            <circle class="emouth" cx="170" cy="127.5" r="4" fill="black" stroke="black"></circle>
+            <line class="emouth" x1="160" y1="125" x2="180" y2="125" stroke="black" stroke-width="2"></line>
+            <path class="emouth" d="M160 130, 165 125, 170 130, 175 125, 180 130" fill="none" stroke="black"></path>
+            <!-- Talking -->
+            <path id="talking" d="M215 110, Q225 85 240 90, Q250 80 260 85, Q270 75 280 85, Q285 90 285 90, Q295 95 290 100, Q300 110 295 120, Q280 135 270 130, Q260 135 240 125, Q230 130 220 120, L185 125 Z" fill="ghostwhite" stroke="black"></path>
+            <text class="speech" x="220" y="112.5" stroke="black" stroke-width="0.5">I love you!!!</text>
+            <text class="speech" x="220" y="112.5" stroke="black" stroke-width="0.5">What's up!</text>
+            <text class="speech" x="220" y="112.5" stroke="black" stroke-width="0.5">How u doing?</text>
+            <text class="speech" x="220" y="112.5" stroke="black" stroke-width="0.5">U look good!</text>
+            <text class="speech" x="220" y="112.5" stroke="black" stroke-width="0.5">Hey!</text>
+            <text class="speech" x="220" y="112.5" stroke="black" stroke-width="0.5">Surprise!</text>
+            <text class="speech" x="220" y="112.5" stroke="black" stroke-width="0.5">I'm Jack!</text>
+            <text class="speech" x="220" y="112.5" stroke="black" stroke-width="0.5">Style my face!</text>
+        </svg>
+    </body>
+</html>
