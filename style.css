@@ -1,0 +1,34 @@
+body {
+    background-color: #BBD;
+}
+form {
+    position: absolute;
+    z-index: 1;
+}
+#f2 {
+    right: 0;
+}
+svg {
+    
+    width: 90%;
+    height: 200px;
+    transform: translateY(150px) scale(2) translateX(-50px);
+}
+.eeyebrows {
+    display: none;
+}
+.eeyes {
+    display: none;
+}
+.emouth {
+    display: none;
+}
+#mouth {
+    display: block;
+}
+text {
+    font-size: 14px;
+}
+#talking, .speech {
+    display: none;
+}
